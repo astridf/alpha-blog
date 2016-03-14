@@ -3,6 +3,7 @@ $navbar-default-link-color: #fff;
 $navbar-default-link-hover-color: #D6D6D6;
 $navbar-default-link-font-weight: 700;
 $navbar-border-radius: none;
+$navbar-default-link-active-color:#fff;
 
 
 @import "bootstrap-sprockets";
@@ -20,6 +21,21 @@ $navbar-border-radius: none;
 #logo:hover{
   color:#fff;
   text-decoration:none;
+}
+
+h4, h2{
+  color:#fff;
+}
+.lead{
+  margin-top:100px;
+  color:#fff;
+}
+.signup-form{
+  margin-top:60px;
+}
+.signup-form label{
+  color:#fff;
+  font-size:18px;
 }
 
 .center{
@@ -41,6 +57,11 @@ html {
   letter-spacing: -1px;
   font-weight:bold;
   font-size:90px;
+}
+h1{
+  color:#fff;
+  font-weight:bold;
+
 }
 
 
@@ -134,11 +155,15 @@ footer ul{
 }
 
 .badge{
-  background-color:#cef6f5;
+  background-color:#337ab7;
   text-transform: uppercase;
   font-weight:bold;
+  text-align:center;
+  margin:5px;
 }
-
+.badge a{
+  color: #fff;
+}
 .input_checkbox input {
   width:auto !important;
 }

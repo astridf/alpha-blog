@@ -1,4 +1,4 @@
-<h1 align="center"><%= "Category: " + @category.name %></h1>
+<h1 align="center"><%= "Category: " + @category.name %></h1><br>
 <div align="center">
   <% if logged_in? and current_user.admin? %>
     <div class="row">
@@ -13,7 +13,7 @@
 </div>
 
 <% if !@category_articles.exists? %>
-<p class = "lead center" >There's no article in this category.</p>
+<p class = "lead center" >There's currently no articles in this category.<br>Why don't you add one?</p>
 <% if logged_in?%>
 <p class = center> <%= link_to "Add an article", new_article_path %> <p>
 <% end %>
