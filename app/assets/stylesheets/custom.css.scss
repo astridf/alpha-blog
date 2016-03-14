@@ -1,7 +1,13 @@
-$navbar-default-bg: #222;
+$navbar-default-bg: #404040;
+$navbar-default-link-color: #fff;
+$navbar-default-link-hover-color: #D6D6D6;
+$navbar-default-link-font-weight: 700;
+$navbar-border-radius: none;
+
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
 
 #logo {
   color:#fff;
@@ -19,55 +25,81 @@ $navbar-default-bg: #222;
 .center{
   text-align:center;
 }
-
-.jumbotron{
-  background-image: asset-url('test_back.jpg');
-  background-size: cover;
-  height:600px;
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+html {
+  overflow-y: scroll;
 }
 
-.jumbotron h1{
+.homebanner h1{
   color:#fff;
-  text-transform:uppercase;
   text-align:center;
-  margin-top:180px;
+  margin-top:230px;
   margin-bottom:10px;
-  lett-spacing: -1px;
+  letter-spacing: -1px;
   font-weight:bold;
+  font-size:90px;
 }
+
 
 .btn-xlarge{
-  font-size:1.7em;
-  background-color:#8B5EB5;
-  border: none;
-  border-radius:10px;
+  font-size:1.3em;
+  background:none;
+  border: 2px solid white;
+  padding: 10px 40px 10px 40px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.btn-xlarge:hover{
+  background:#fff;
+  color:#000;
+  border: 2px solid white;
+}
+
+.login-btn{
+  padding: 10px 45px 10px 45px;
+}
+
+.explore-btn{
+  padding: 10px 34px 10px 34px;
+}
+
+.button-group{
+text-align:center;
 }
 
 footer {
-  margin-top:45px;
-  padding-top:5px;
-  border-top:1px solid #eaeaea;
-  background:#222;
-  height:60px;
+  height: 50px;
+  background:#2E2E2E;
+  padding-left:20px;
+  padding-right:20px;
 }
+
 footer small{
   color:#fff;
   float:left;
   font-size:1.1em;
+  margin-top:15px;
 }
 footer a {
-  color:#cfcfcf;
+  color:#fff;
 }
 
 footer a:hover{
-  color:#adadad;
+  color:#D6D6D6;
+  text-decoration:none;
 }
 footer ul{
   float:right;
   list-style:none;
 }
-.jumbotron p{
+.homebanner p{
   color:#fff;
+  font-size:22px;
+  margin-top:25px;
 }
 
 .article-actions{
@@ -109,4 +141,27 @@ footer ul{
 
 .input_checkbox input {
   width:auto !important;
+}
+
+body {
+  /* Location of the image */
+  background-image: asset-url('landscape.jpg');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #fff;
 }
